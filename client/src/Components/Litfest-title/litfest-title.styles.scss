@@ -1,0 +1,56 @@
+.litfest-title{
+    // border : 1px solid white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .heading{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border : 1px solid white;
+
+        .title{
+            font-weight: bold;
+            font-size: 50px;
+            color: #e5e5e5;
+        }
+        .year{
+            font-weight: bold;
+            font-size: 70px;
+            background-image: linear-gradient(#cc2b5e,#753a88);
+            background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
+        }
+    }
+    .tagline{
+        justify-content: center;
+        // border: 1px solid white; 
+        width: 64%;
+        font-weight: 500;
+        font-size: 50px;
+        color: #e5e5e5;
+    }
+}
+
+@media only screen and (min-width : 1000px){
+    .litfest-title{
+        .heading{
+            .title{
+                font-weight: bold;
+                font-size: 250px;
+                color: #e5e5e5;
+            }
+            .year{
+                font-weight: bold;
+                font-size: 300px;
+            }
+        }
+    }
+}

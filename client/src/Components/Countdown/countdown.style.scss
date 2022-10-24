@@ -1,0 +1,111 @@
+.countdown-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .info{
+        // border : 1px solid white;
+        width: 17.1%;
+        height: 30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+
+        .text{
+        font-size: 40px;
+        }
+
+        .info-text{
+            font-size: 25px;
+        }
+    }
+
+    .countdown{
+        // border : 1px solid white;
+        width: 80%;
+        height: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .count{
+            // border : 1px solid white;
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .heading{
+                width: 100%;
+                // border: 1px solid white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50%;
+                font-size: 15px;
+                color: #B37A8C;
+            }
+
+            .value{
+                width: 100%;
+                // border: 1px solid white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50%;
+                font-size: 10px;
+                color : #393CDE;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 1000px) {
+    .countdown-container{
+        .countdown{
+            // border : 1px solid white;
+            width: 40%;
+            height: 70%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+    
+            .count{
+                // border : 1px solid white;
+                height: 100%;
+                width: 15%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+    
+                .heading{
+                    width: 100%;
+                    // border: 1px solid white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 50%;
+                    font-size: 30px;
+                    color: #B37A8C;
+                }
+    
+                .value{
+                    width: 100%;
+                    // border: 1px solid white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 50%;
+                    font-size: 30px;
+                    color : #393CDE;
+                }
+            }
+        }
+    }
+}

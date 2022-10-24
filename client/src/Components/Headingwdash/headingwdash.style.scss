@@ -1,0 +1,48 @@
+.headingwithdash{
+    height: 100%;
+    width: 100%;
+    // border : 1px solid black;
+    display : flex;
+    justify-content: center;
+
+
+    .about-heading{
+        // border : 1px solid red;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .about-heading-text{
+            position: relative;
+            // border : 1px solid red;
+            height: 30%;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .text{
+                font-weight: 550;
+                font-size: 40px;
+                position: relative;
+                // border: 1px solid red;
+
+                &::before{
+                    position: absolute;
+                    content: "";
+                    overflow: hidden;
+                    height: 100px;
+                    width: 100px;
+                    background-color: rgba(255, 81, 185, 0.875);
+                    z-index: -1;
+                    border: 1px solid pink;
+                    border-radius: 50%;
+                    top : -28px;
+                    left: -18px;
+                }
+            }
+        }
+    }
+}
