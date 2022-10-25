@@ -1,5 +1,7 @@
 import React from "react";
 
+import {motion} from 'framer-motion';
+
 import "./header.style.scss";
 
 const Header = () => {
@@ -13,12 +15,12 @@ const Header = () => {
                 </div>
             </div>
             <div className="links-container">
-                <div className="link"><span className="link-text">EVENTS</span></div>
-                <div className="link"><span className="link-text">ABOUT</span></div>
-                <div className="link"><span className="link-text">GLIMPSES</span></div>
-                <div className="link"><span className="link-text">SCHEDULE</span></div>
-                <div className="link"><span className="link-text">FAQ's</span></div>
-                <div className="link"><span className="link-text">CONTACT</span></div>
+                <div className="link"><motion.span whileHover={{scale : 1.2}} className="link-text">ABOUT</motion.span></div>
+                <div className="link"><motion.span whileHover={{scale : 1.2}} className="link-text">GLIMPSES</motion.span></div>
+                <div className="link"><motion.span whileHover={{scale : 1.2}} className="link-text">EVENTS</motion.span></div>
+                <div className="link"><motion.span whileHover={{scale : 1.2}} className="link-text">SCHEDULE</motion.span></div>
+                <div className="link"><motion.span whileHover={{scale : 1.2}} className="link-text">FAQ's</motion.span></div>
+                <div className="link"><motion.span whileHover={{scale : 1.2}} className="link-text">CONTACT</motion.span></div>
             </div>
         </div>
     )

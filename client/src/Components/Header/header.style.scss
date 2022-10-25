@@ -6,7 +6,7 @@
     min-height: 100%;
     height: 100%;
     width: 100%;
-    
+
     .logo-container{
         display: flex;
         justify-content: flex-start;
@@ -28,8 +28,10 @@
         justify-content: space-around;
         align-items: center;
         height: 100%;
-        width: 35%; 
+        width: 45%; 
         margin-right: 5%;
+        // border : 1px solid white;
+    
 
         .link{
             display: flex;
@@ -45,7 +47,7 @@
             cursor: pointer;
 
             &:hover{
-                color: #ff48d7;
+                color: #393CDE;
             }
             }
         }

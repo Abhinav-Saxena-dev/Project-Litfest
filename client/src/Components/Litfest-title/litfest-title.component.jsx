@@ -31,8 +31,8 @@ const LitFestTitle = () => {
                 <span className="title">LitFest</span><span className="year">{year < 10 ? ` '0${year}` : ` '${year}`}</span>
             </div>
             <motion.div className = "tagline"
-            animate = {{opacity : 1}} initial = {{opacity : 0}}
-            transition = {{duration : 7, ease : "backInOut"}}
+            animate = {{opacity : 1, x : 0}} initial = {{opacity : 0, x : 30}}
+            transition = {{delay : 0, duration : 3, ease : "easeInOut"}}
             >
                 This is a tagline for litfest.
             </motion.div>
