@@ -1,0 +1,26 @@
+.glimpses-past{
+    height: 120vh;
+    width: 100vw;
+    background-image: linear-gradient(#000000,#1c0025);
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .glimpses-heading{
+        height: 20vh;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 1px solid white;
+        margin-left: 16%;
+    }
+
+    .glimpses-imageswipe{
+        height: 100vh;
+        width: 100%;
+    }
+}

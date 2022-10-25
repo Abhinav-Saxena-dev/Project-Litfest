@@ -42,7 +42,7 @@ const CountDown = ({targetDate}) =>{
         return (
         <div className='countdown-container'>
             <div className="info">
-            <span class="material-symbols-outlined text">
+            <span className = "material-symbols-outlined text">
                 event
             </span>
             {
