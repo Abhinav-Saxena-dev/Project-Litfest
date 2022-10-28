@@ -8,6 +8,9 @@ import { useRef } from "react";
 const HeadingWithDash = ({text, color}) => {
     const ref = useRef(null)
     const isInView = useInView(ref)
+
+    const textColor = color ? color : 'black';
+
     return(
         <div className="headingwithdash">
             <div className="about-heading">
@@ -18,7 +21,7 @@ const HeadingWithDash = ({text, color}) => {
                     transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s"
                   }}
                 className="about-heading-text">
-                    <div className="text" style={color ? {color : color} : {color : 'black'}}>{text}</div>
+                    <div className="text" style={{color : textColor}}>{text}</div>
                 </motion.div>
             </div>
         </div>

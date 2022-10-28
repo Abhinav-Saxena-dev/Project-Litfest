@@ -1,0 +1,121 @@
+.event-component{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    // border: 1px solid black;
+
+    .background-text{
+        overflow: hidden;
+        position: absolute;
+        top:-400px;
+        left: 300px;
+        font-size: 500px;
+        color: rgba(0, 0, 0, 0.05);
+        transform: rotate(-15deg);
+        z-index: -1;
+    }
+
+    .event-heading-container{
+        // border: 1px solid red;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+
+        .event-serialno{
+            // border: 1px solid black;
+            height: 100%;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .serialno{
+                font-weight: bold;
+                font-size: 60px;
+                color: #0A094D;
+            }
+        }
+        .event-heading{
+            // border: 1px solid grey;
+            height: 100%;
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .event-heading-text{
+                font-weight: 500;
+                font-size: 40px;
+                position: relative;
+                color: #0A094D;
+
+                &::before{
+                    position: absolute;
+                    content: "";
+                    overflow: hidden;
+                    height: 0px;
+                    width: 200px;
+                    background-color: #B37A8C;
+                    z-index: -1;
+                    border: 1px solid #B37A8C;
+                    border-radius: 50%;
+                    top : 55px;
+                }
+            }
+        }
+        
+    }
+
+    .event-content-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        width: 100%;
+        // border: 1px solid red;
+
+        .event-descbtn-container{
+            width: 60%;
+            height: 100%;
+            // border: 1px solid black;
+            display: flex;
+            // justify-content: center;
+            // align-items: center;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .description-container{
+                // border: 1px solid grey;
+                height: 50%;
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .description{
+                    line-height: 35px;
+
+                    &.para2{
+                        margin-top: 50px;
+                    }
+                }
+            }
+
+            .event-register-btn{
+                height: 20%;
+                width: 80%;
+            }
+        }
+    
+        .event-image-container{
+            width: 40%;
+            height: 100%;
+
+            .logo{
+                scale: 0.9;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.event-page{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f1f3f7;
+    position: relative;
+    z-index: 0;
+
+    .event-page-heading{
+        height: 20%;
+        width: 90%;
+    }
+
+    .event-page-events{
+        // border : 1px solid black;
+        height:80%;
+        width: 100%;
+    }
+}
