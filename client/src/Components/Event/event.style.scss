@@ -1,16 +1,30 @@
 .event-component{
-    height: 100%;
+    height: 80vh;
     width: 100%;
+    background-color: #f1f3f7;
     position: relative;
+    // margin-top: 5%;
+    z-index: 0;
     // border: 1px solid black;
+
+    &::after{
+        overflow: hidden;
+        position: absolute;
+        top: 90%;
+        left: 16%;
+        content: "";
+        height: 0px;
+        width: 40%;
+        border: 1px solid rgba(218, 218, 218, 0.299);
+    }
 
     .background-text{
         overflow: hidden;
         position: absolute;
-        top:-400px;
-        left: 300px;
-        font-size: 500px;
-        color: rgba(0, 0, 0, 0.05);
+        top:-350px;
+        left: 400px;
+        font-size: 400px;
+        color: rgba(0, 0, 0, 0.04);
         transform: rotate(-15deg);
         z-index: -1;
     }
@@ -47,7 +61,7 @@
 
             .event-heading-text{
                 font-weight: 500;
-                font-size: 40px;
+                font-size: 60px;
                 position: relative;
                 color: #0A094D;
 
@@ -55,13 +69,13 @@
                     position: absolute;
                     content: "";
                     overflow: hidden;
-                    height: 0px;
-                    width: 200px;
+                    height: 75px;
+                    width: 0px;
                     background-color: #B37A8C;
                     z-index: -1;
                     border: 1px solid #B37A8C;
-                    border-radius: 50%;
-                    top : 55px;
+                    top : 0px;
+                    left: -15px;
                 }
             }
         }
@@ -88,7 +102,7 @@
 
             .description-container{
                 // border: 1px solid grey;
-                height: 50%;
+                height: 60%;
                 width: 80%;
                 display: flex;
                 justify-content: center;
@@ -96,6 +110,7 @@
 
                 .description{
                     line-height: 35px;
+                color : rgba(50, 51, 51, 0.8);
 
                     &.para2{
                         margin-top: 50px;
@@ -104,17 +119,25 @@
             }
 
             .event-register-btn{
-                height: 20%;
+                height: 30%;
                 width: 80%;
+                // border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
             }
         }
     
         .event-image-container{
             width: 40%;
             height: 100%;
+            // border: 1px solid black;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
 
             .logo{
-                scale: 0.9;
+                scale: 0.7;
             }
         }
     }

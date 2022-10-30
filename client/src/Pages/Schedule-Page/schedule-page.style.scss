@@ -1,0 +1,23 @@
+.schedule-page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    .schedule-page-heading{
+        // border: 1px solid black;
+        height: 10vh;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .schedule-page-canvas{
+        border: 1px solid black;
+        height: 76vh;
+        width: 45vw;
+    }
+}

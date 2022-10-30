@@ -1,32 +1,32 @@
 import React, {useRef} from "react";
 import { useInView, motion } from "framer-motion";
 
-import { ReactComponent as Logo } from "./../../assets/undraw_mic_drop_uuyg.svg";
+import EventButton from "../Event-Button/event-button.component";
 
 import "./event.style.scss";
 
-const Event = () => {
-    const ref = useRef(null)
-    const isInView = useInView(ref)
+const Event = ({event_no, event_desc, event_name, Logo}) => {
 
-    const ref2 = useRef(null)
-    const isInView2 = useInView(ref)
+  const ref = useRef(null)
+  const isInView = useInView(ref, {once : true})
 
+  const ref2 = useRef(null)
+  const isInView2 = useInView(ref2, {once : true})
 
   return (
     <div className="event-component">
-        <p className="background-text">#001</p>
+        <p className="background-text">{event_no}</p>
       <div className="event-heading-container">
         <motion.div
         ref = {ref} 
         style={{
-          transform: isInView ? "none" : "scale(5)",
+          transform: isInView ? "none" : "scale(2)",
           opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
         className="event-serialno">
           <span className="serialno">
-            <i>#001</i>
+            <i>{event_no}</i>
           </span>
         </motion.div>
         <motion.div
@@ -34,26 +34,34 @@ const Event = () => {
         style={{
           transform: isInView ? "none" : "translateX(-100px)",
           opacity: isInView ? 1 : 0,
-          transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 1.2s"
+          transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1)"
         }}
         className="event-heading">
-          <span className="event-heading-text">THE CONTROVERSIAL ARC</span>
+          <span className="event-heading-text">{event_name}</span>
         </motion.div>
       </div>
       <div className="event-content-container">
         <div className="event-descbtn-container">
-          <div className="description-container">
-            <p className="description">Pellentesque in finibus justo. Suspendisse facilisis sem
-              ante. Interdum et malesuada fames ac ante ipsum primis in
-              faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Phasellus congue vestibulum gravida. In in mauris et massa commodo
-              tincidunt. Mauris aliquam enim laoreet suscipit eleifend.
-              Suspendisse consequat lorem eu felis bibendum, a posuere arcu
-              egestas. Cras pulvinar risus sit amet arcu tempus posuere.
-              Curabitur tempor, orci nec gravida molestie, justo erat pharetra
-              urna, non commodo elit neque sit amet odio.</p>
-          </div>
-          <div className="event-register-btn"></div>
+          <motion.div 
+          ref = {ref2} 
+          style={{
+            transform: isInView2 ? "none" : "translateX(-100px)",
+            opacity: isInView2 ? 1 : 0,
+            transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1)"
+          }}
+          className="description-container">
+            <p className="description">{event_desc}</p>
+          </motion.div>
+          <motion.div 
+          ref = {ref2} 
+          style={{
+            transform: isInView2 ? "none" : "translateY(100px)",
+            opacity: isInView2 ? 1 : 0,
+            transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1)"
+          }}
+          className="event-register-btn">
+            <EventButton text = {`Register / Explore`}/>
+          </motion.div>
         </div>
         <div className="event-image-container">
           <Logo className="logo" />

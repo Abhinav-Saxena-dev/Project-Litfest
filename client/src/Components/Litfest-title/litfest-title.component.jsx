@@ -34,7 +34,7 @@ const LitFestTitle = () => {
             animate = {{opacity : 1, x : 0}} initial = {{opacity : 0, x : 30}}
             transition = {{delay : 0, duration : 3, ease : "easeInOut"}}
             >
-                This is a tagline for litfest.
+            ONE STOP FOR ALL LITERARY ENTHUSIASTS 
             </motion.div>
         </div>
     )
