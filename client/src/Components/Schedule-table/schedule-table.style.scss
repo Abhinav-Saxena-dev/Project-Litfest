@@ -1,0 +1,45 @@
+.schedule-table{
+    height: 90%;
+    width: 90%;
+
+    .schedule-table-content{
+        // border: 1px solid black;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .schedule-date{
+            font-size: 22px;
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            &::before{
+                content: "";
+                position: absolute;
+                height: 6px;
+                width: 6px;
+                background-color: palevioletred;
+                border: none;
+                border-radius: 50%;
+                top: 11px;
+                left: 0;
+            }
+        }
+        .schedule-event-time{
+            font-size: 22px;
+            width: 25%;
+            display: flex;
+            justify-content: center;
+        }
+        .schedule-event-name{
+            font-size: 22px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

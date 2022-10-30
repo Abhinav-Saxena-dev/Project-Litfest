@@ -12,7 +12,7 @@ const SchedulePage = () => {
                 <HeadingWithDash text = {`LITFEST SCHEDULE`}/>
             </div>
             <div className="schedule-page-canvas">
-
+                <Schedule/>
             </div>
         </div>
     );
