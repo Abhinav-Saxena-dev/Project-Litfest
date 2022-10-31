@@ -3,6 +3,7 @@ import AboutUs from "./Pages/AboutUs-Page/aboutus.component";
 import Glimpses from "./Pages/Glimpses-Page/glimpses.component";
 import EventPage from "./Pages/Event-Page/eventpage.component";
 import SchedulePage from "./Pages/Schedule-Page/schedule-page.component";
+import FaqPage from "./Pages/FAQ-Page/faq.component";
 
 const App = () =>{
   return (
@@ -12,6 +13,7 @@ const App = () =>{
       <Glimpses/>
       <EventPage/>
       <SchedulePage/>
+      <FaqPage/>
     </div>
   );
 }
