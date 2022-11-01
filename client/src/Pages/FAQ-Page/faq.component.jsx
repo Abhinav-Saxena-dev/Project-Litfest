@@ -8,7 +8,7 @@ import './faq.style.scss';
 const FaqPage = () => {
 
     return(
-        <div className="faq-page">
+        <div className="faq-page" id = {"faq's"}>
             <div className="faq-page-heading">
                 <HeadingWithDash text = {`Frequently Asked Questions`} />
             </div>

@@ -6,9 +6,9 @@ import "./information-text-animation.style.scss";
 
 const InformationText = () => {
     const ref = useRef(null)
-    const isInView = useInView(ref)
+    const isInView = useInView(ref, {once : true})
     const ref2 = useRef(null)
-    const isInView2 = useInView(ref2)
+    const isInView2 = useInView(ref2, {once : true})
   return (
     <div className="information-text-animation">
       <motion.div 

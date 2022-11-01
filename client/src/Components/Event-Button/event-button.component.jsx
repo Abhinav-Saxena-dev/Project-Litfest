@@ -1,12 +1,14 @@
 import React from "react";
 
+import {motion} from 'framer-motion';
+
 import "./event-button.style.scss";
 
-const EventButton = ({text}) => {
+const EventButton = ({text, ...otherProps}) => {
   return (
-    <button className = "custom-button">
+    <motion.button whileHover={{scale : 1.1}} {...otherProps} className = "custom-button">
         {text}
-    </button>
+    </motion.button>
   );
 };
 

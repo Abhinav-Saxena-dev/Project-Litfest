@@ -7,7 +7,7 @@ import { useRef } from "react";
 
 const Date = ({eventDate, regEndDate}) => {
     const ref = useRef(null)
-    const isInView = useInView(ref)
+    const isInView = useInView(ref, {once : true})
     return(
         <motion.div 
         ref = {ref}

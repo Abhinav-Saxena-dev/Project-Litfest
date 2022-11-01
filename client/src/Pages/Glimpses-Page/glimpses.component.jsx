@@ -7,7 +7,7 @@ import './glimpses.style.scss'
 
 const Glimpses = () => {
     return(
-        <div className="glimpses-past">
+        <div className="glimpses-past" id = {'glimpses'}>
             <div className="glimpses-heading">
                 <HeadingWithDash text = {'GLIMPSES FROM THE PAST LITFEST EDITIONS'} color = {`white`}/>
             </div>

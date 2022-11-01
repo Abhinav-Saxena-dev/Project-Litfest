@@ -1,0 +1,94 @@
+ .form-page{
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .form-page-logo{
+        border-bottom: 1px solid rgba(214, 214, 214, 0.657);
+        height: 41%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .form-debate-logo{
+            scale: 0.8;
+        }
+    }
+
+    .form-page-description{
+        height: auto;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgba(214, 214, 214, 0.657);
+
+        .form-desc{
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 2.6rem;
+            letter-spacing: 0.04em;
+        }
+    }
+    .form-page-form{
+        // border: 1px solid black;
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+
+
+        .form-heading{
+            height: 8%;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+
+        .form{
+            width: 23%;
+        }
+
+        .text-area-form{
+            width: 100%;
+            height: 20%;
+
+            .answer-text{
+                height: 100%;
+                width: 100%;
+                padding: 15px 0px 10px 15px;
+                outline: 0px;
+                border: 1px solid gray;
+                border-radius: 8px;
+                overflow-y: scroll;
+                resize: none;
+                font-family: 'Nanum Myeongjo', serif;
+                letter-spacing: 1px;
+                font-size: 15px;
+                line-height: 30px;
+                color: grey;
+            }
+        }
+        
+        .submit-button{
+            // border: 1px solid black;
+            height: 13%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            &.down{
+                height: 19%;
+                align-items: center;
+            }
+        }
+    }
+ }

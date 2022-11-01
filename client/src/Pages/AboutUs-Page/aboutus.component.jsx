@@ -8,7 +8,7 @@ import './aboutus.style.scss';
 
 const AboutUs = () => {
     return(
-        <div className="about-us-container">
+        <div className="about-us-container" id = {'about'}>
             <div className="about-us-page-heading">
                 <HeadingWithDash text = {'ABOUT THE EVENT'}/>
             </div>

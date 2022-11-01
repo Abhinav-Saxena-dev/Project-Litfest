@@ -10,7 +10,7 @@ const EventPage = () => {
 
     return(
         <div className="event-page">
-            <div className="event-page-heading">
+            <div className="event-page-heading" id = {'events'}>
                 <HeadingWithDash text={'LITFEST EVENTS'}/>
             </div>
             <div className="event-page-events">

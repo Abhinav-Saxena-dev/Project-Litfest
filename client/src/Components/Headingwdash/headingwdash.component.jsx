@@ -7,7 +7,7 @@ import { useRef } from "react";
 
 const HeadingWithDash = ({text, color}) => {
     const ref = useRef(null)
-    const isInView = useInView(ref)
+    const isInView = useInView(ref, {once : true})
 
     const textColor = color ? color : 'black';
 

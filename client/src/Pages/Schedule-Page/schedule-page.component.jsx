@@ -7,7 +7,7 @@ import './schedule-page.style.scss';
 
 const SchedulePage = () => {
     return(
-        <div className="schedule-page">
+        <div className="schedule-page" id = {'schedule'}>
             <div className="schedule-page-heading">
                 <HeadingWithDash text = {`LITFEST SCHEDULE`}/>
             </div>
