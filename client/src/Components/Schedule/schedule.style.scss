@@ -14,7 +14,7 @@
         align-items: center;
 
         .schedule-date-heading{
-            font-size: 30px;
+            font-size: 1.5vw;
             width: 25%;
             display: flex;
             justify-content: center;
@@ -22,8 +22,8 @@
             font-weight: bold;
         }
         .schedule-event-time-heading{
-            font-size: 30px;
-            width: 25%;
+            font-size: 1.5vw;
+            width: 25%; 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -31,12 +31,36 @@
 
         }
         .schedule-event-name-heading{
-            font-size: 30px;
+            font-size: 1.5vw;
             width: 50%;
             display: flex;
             justify-content: center;
             align-items:center; 
             font-weight: bold;
+        }
+    }
+}
+
+@media only screen and (max-width : 1000px) {
+    .schedule{
+    
+        .schedule-table-heading{
+            width: 100%;
+            
+            .schedule-date-heading{
+                font-size: 5vw;
+                width: 30%;
+
+            }
+            .schedule-event-time-heading{
+                font-size: 5vw;
+                width: 30%;
+                
+            }
+            .schedule-event-name-heading{
+            width: 40%;
+            font-size: 5vw;
+            }
         }
     }
 }

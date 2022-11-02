@@ -24,6 +24,7 @@
 
         .odyssey_logo{
             height: 70%;
+            width: 65%;
         }
     }
 
@@ -100,7 +101,7 @@
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
-                    font-size: 2rem;
+                    font-size: 1.7vw;
                     color: rgb(255, 0, 255);
 
                 }
@@ -117,7 +118,7 @@
 
             & a{
                 text-decoration: none;
-                font-size: 100px;
+                font-size: 5vw;
                 margin-left: 10%;
 
                 &:hover{
@@ -127,4 +128,114 @@
             }
         }
     }
+}
+
+@media only screen and (max-width : 1000px) {
+    .contact-us-page{
+        flex-direction: column;
+        .contactus-page-logo{
+            width: 80%;
+            .odyssey_logo{
+                height: 60%;
+                width: 80%;
+            }
+        }
+    
+        .contactus-page-details{
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-direction: column;
+            // border: 1px solid gray;
+    
+            .details-numbers{
+                width: 100%;
+                height: 60%;
+                align-items: flex-start;
+    
+    
+                &::before{
+                    content: "Have a query? Reach us out on :";
+                    position: absolute;
+                    font-size: 5vw;
+                    top: -30%;
+                    left: 10%;
+                    color: rgba(194, 194, 194, 0.708);
+                }   
+                
+                &::after{
+                    content: "Follow us for latest updates :";
+                    position: absolute;
+                    font-size: 5vw;
+                    top: 70%;
+                    left: 10%;
+                    color: rgba(194, 194, 194, 0.708);
+                }
+    
+    
+                .number-heading{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    height: 50%;
+                    width: 20%;
+                    // border: 1px solid gray;
+    
+                    .number-heading-logo{
+                        display: none;
+    
+                        .phone-logo{
+                            fill: white;
+                            scale: (0.4);
+                        }
+                    }
+                }
+    
+                .member-number-container{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content : space-evenly;
+                    height: 56%;
+                    width: 60%;
+                    // border: 1px solid white;
+    
+    
+                    .member-number{
+                        // border: 1px solid white;
+                        height: 33.3%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        font-size: 3.4vw;
+                        color: rgb(255, 0, 255);
+    
+                    }
+                }
+            }
+    
+            .social-media{
+                width: 90%;
+                height: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // border: 1px solid white;
+    
+                & a{
+                    text-decoration: none;
+                    font-size: 8vw;
+    
+                    &:hover{
+                        scale: 1.18;
+                        color: rgb(178, 0, 178);
+                    }
+                }
+            }
+        }
+    }    
 }

@@ -12,7 +12,7 @@
         align-items: center;
 
         .schedule-date{
-            font-size: 22px;
+            font-size: 1.3vw;
             width: 25%;
             display: flex;
             justify-content: center;
@@ -26,21 +26,54 @@
                 background-color: palevioletred;
                 border: none;
                 border-radius: 50%;
-                top: 11px;
-                left: 0;
+                top: 40%;
+                left: 0%;
             }
         }
         .schedule-event-time{
-            font-size: 22px;
+            font-size: 1.3vw;
             width: 25%;
             display: flex;
             justify-content: center;
         }
         .schedule-event-name{
-            font-size: 22px;
+            font-size: 1.3vw;
             width: 50%;
             display: flex;
             justify-content: center;
+        }
+    }
+}
+
+@media only screen and (max-width : 1000px) {
+    .schedule-table{
+        width: 100%;
+        .schedule-table-content{
+    
+            .schedule-date{
+                font-size: 3vw;
+                width: 30%;
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    height: 6px;
+                    width: 6px;
+                    background-color: palevioletred;
+                    border: none;
+                    border-radius: 50%;
+                    top: 40%;
+                    left: -30%;
+                }
+            }
+            .schedule-event-time{
+                font-size: 3vw;
+                width: 30%;
+            }
+            .schedule-event-name{
+                font-size: 3vw;
+                width: 40%;
+            }
         }
     }
 }

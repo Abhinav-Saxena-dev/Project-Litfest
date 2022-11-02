@@ -1,5 +1,4 @@
 .custom-button{
-    min-width: 165px;
     width: 35%;
     height: 50px;
     letter-spacing: 0.5px;
@@ -21,4 +20,15 @@
         background-color: #F7941E;
         color: #0f3460;
     }
+}
+@media only screen and (max-width : 1500px) {
+    .custom-button{
+         width : 60%;
+    }
+ }
+
+@media only screen and (max-width : 1000px) {
+   .custom-button{
+        width : 100%;
+   }
 }

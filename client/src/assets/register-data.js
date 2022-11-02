@@ -6,7 +6,7 @@ import hind from "./Abhivyakti.png";
 
 const data = [
     {
-        id : 'creative writing',
+        id : 'creative-writing',
         content : `This will be a creative writing competition. Registration will be done
         online, along with a short questionnaire about what series/novel would
         the participants choose to change the ending and why. Based on their
@@ -36,7 +36,7 @@ const data = [
         logo : jam,
     },
     {
-        id : 'hindi jam',
+        id : 'hindi-jam',
         content : `This will be a creative writing competition. Registration will be done
         online, along with a short questionnaire about what series/novel would
         the participants choose to change the ending and why. Based on their

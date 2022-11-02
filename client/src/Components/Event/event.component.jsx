@@ -18,8 +18,6 @@ const Event = ({event_no, event_desc, event_name, Logo}) => {
   const ref2 = useRef(null)
   const isInView2 = useInView(ref2, {once : true})
 
-  const scaling = event_name === 'DEBATE' ? 1.02 : 1.15;
-
   const handleClick = () => {
     history.push(`/register/${event_name.toLowerCase()}`)
   }
@@ -77,7 +75,7 @@ const Event = ({event_no, event_desc, event_name, Logo}) => {
           </motion.div>
         </div>
         <div className="event-image-container">
-          <motion.img whileHover={{scale : scaling}} src={Logo} className="logo" />
+          <motion.img whileHover={{scale : 1.15, overflow : 'hidden'}} src={Logo} className="logo" />
         </div>
       </div>
     </div>
