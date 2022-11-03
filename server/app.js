@@ -29,6 +29,10 @@ const URL = process.env.DATABASE
 
 connectDB(URL)
 
+app.get('/', (req,res) => {
+    res.status(200).json({msg : "Backend server is on"})
+})
+
 app.listen(PORT, () => {
     console.log('server started on port 8000...');
 })
