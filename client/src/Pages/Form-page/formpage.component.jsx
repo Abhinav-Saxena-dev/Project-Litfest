@@ -82,7 +82,11 @@ const FormPage = (props) => {
     }
     const url = `https://litfest-server.herokuapp.com/${event}`;
     try{
-      const response = await axios.post(url, participant);
+      const response = await axios.post(url, participant,{
+        headers : {
+          'Content-Type': 'application/json'
+        }
+      });
       console.log(response);
       setParticipant({
         uname: "",
