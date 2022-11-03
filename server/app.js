@@ -18,10 +18,10 @@ app.use(cors());
 
 app.use(express.json())
 
-app.use('/',derouter)
-app.use('/',jrouter)
-app.use('/',hjrouter)
-app.use('/',creative)
+app.use(derouter)
+app.use(jrouter)
+app.use(hjrouter)
+app.use(creative)
 
 
 const PORT = process.env.PORT || 3000
