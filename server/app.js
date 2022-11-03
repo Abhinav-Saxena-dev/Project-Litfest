@@ -33,7 +33,7 @@ app.get('/', (req,res) => {
     res.status(200).json({msg : "Backend server is on"})
 })
 
-app.get('/debate', (req,res) => {
+app.get('debate', (req,res) => {
     res.status(200).json({msg : "Link working"})
 })
 
