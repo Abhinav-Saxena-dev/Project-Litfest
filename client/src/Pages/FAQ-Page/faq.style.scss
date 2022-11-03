@@ -38,7 +38,7 @@
         position: relative;
         // background-color: #21aeca;
         border-bottom: 1px solid #e5e5e5;
-        font-size: 1.8rem;
+        font-size: 1.5vw;
         font-weight: 400;
         color: #7288a2;
         
@@ -67,10 +67,32 @@
       
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 1000px) {
     .faq-page{
       .accordion {
         width: 90%;
+      }        
+      .accordion-title {
+        font-size: 5vw;
       }
     }
     }
+    @media screen and (max-width: 400px) {
+      .faq-page{
+        .accordian-container{
+          
+          .accordion{
+            width: 90%;
+          }
+  
+        .accordion-title {
+          font-size: 2.3vw;
+        }
+        
+        .accordion-content {
+          font-size: 2.3vw;
+          line-height: 1.2rem;
+        }
+      }
+      }
+      }

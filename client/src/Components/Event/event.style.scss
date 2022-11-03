@@ -179,4 +179,39 @@
         }
     }
     }
+
+    @media only screen and (max-width : 560px) {
+        .event-component{
+            .background-text{
+                top: 10%;
+                left: 20%;
+                font-size: 30vw;
+            }
+            .event-content-container{
+                .event-descbtn-container{
+    
+                    .description-container{
+                        .description{
+                            font-size: 3vw;
+                        }
+                    }
+                }
+            }
+        }
+        }
+
+        @media only screen and (max-height : 680px) {
+            .event-component{
+                .event-content-container{
+                    .event-descbtn-container{
+        
+                        .description-container{
+                            .description{
+                                font-size: 2vw;
+                            }
+                        }
+                    }
+                }
+            }
+            }
     

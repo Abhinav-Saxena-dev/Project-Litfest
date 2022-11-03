@@ -70,8 +70,17 @@
 
 @media only screen and (min-width : 1000px){
   .container{
-
     height: 70%;
     width: 20%;
   }
+}
+
+@media only screen and (max-height : 830px) {
+  .container{
+  
+  .mask {
+    font-size: 30px;
+    margin-top: 3vh;
+  }
+}
 }

@@ -52,7 +52,27 @@
     .information-text-animation{  
         .paragraph{
             .paragraph-text{
-                font-size: 3vw;
+                font-size: 2.6vw;
+            }
+        }
+    }
+}
+
+@media only screen and (max-height : 800px) and (max-width : 500){
+    .information-text-animation{  
+        .paragraph{
+            .paragraph-text{
+                font-size: 2.7vw;
+            }
+        }
+    }
+}
+
+@media only screen and (max-height : 00px){
+    .information-text-animation{  
+        .paragraph{
+            .paragraph-text{
+                font-size: 2vw;
             }
         }
     }

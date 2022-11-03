@@ -105,3 +105,23 @@
         }
     }
 }
+
+@media only screen and (max-width : 370px){
+    .date-container{
+    
+        .date-box{
+
+            .date-heading{
+                font-size: 12px;
+            }
+    
+            .date-text{
+                font-size: 10px;
+    
+                &.smaller{
+                    width: 28%;
+                }
+            }
+        }
+    }
+}

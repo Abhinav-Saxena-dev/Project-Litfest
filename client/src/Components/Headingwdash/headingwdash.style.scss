@@ -67,3 +67,23 @@
         }
     }
 }
+
+@media only screen and (max-width : 400px){
+    .headingwithdash{
+        .about-heading{    
+            .about-heading-text{
+    
+                .text{
+                    font-size: 6vw;
+    
+                    &::before{
+                        height: 200%;
+                        width: 18%;
+                        top : -50%;
+                        left: -5%;
+                    }
+                }
+            }
+        }
+    }
+}
