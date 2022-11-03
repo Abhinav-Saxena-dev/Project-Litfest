@@ -15,7 +15,7 @@ const FormDrop = ({handleChange, list, name, title}) => {
         list = {list}
         onChange = {handleChange}
         styles={{
-          wrapper: { width: '30vw'},
+          wrapper: { width: '100%'},
           
         }}
         />
