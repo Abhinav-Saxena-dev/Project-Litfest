@@ -33,10 +33,6 @@ app.get('/', (req,res) => {
     res.status(200).json({msg : "Backend server is on"})
 })
 
-app.get('debate', (req,res) => {
-    res.status(200).json({msg : "Link working"})
-})
-
 app.listen(PORT, () => {
     console.log('server started on port 8000...');
 })
