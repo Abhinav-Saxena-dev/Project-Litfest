@@ -7,7 +7,7 @@
     align-items: center;
 
     .date-box{
-        height: 40%;
+        height: 20%;
         width: 100%;
         // border: 1px solid grey;
         display: flex;
@@ -81,6 +81,22 @@
                 align-items: center;
                 font-size: 22px;
                 color: rgba(50, 51, 51, 0.8);
+    
+                &.smaller{
+                    width: 28%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 500px){
+    .date-container{
+    
+        .date-box{
+    
+            .date-text{
+                font-size: 13px;
     
                 &.smaller{
                     width: 28%;

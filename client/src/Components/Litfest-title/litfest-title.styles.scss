@@ -17,12 +17,12 @@
 
         .title{
             font-weight: bold;
-            font-size: 50px;
+            font-size: 15vw;
             color: #ffffff;
         }
         .year{
             font-weight: bold;
-            font-size: 70px;
+            font-size: 18vw;
             background-image: linear-gradient(#cc2b5e,#753a88);
             background-clip: text;
             -webkit-text-fill-color: transparent; 
@@ -30,11 +30,12 @@
         }
     }
     .tagline{
+        display: flex;
         justify-content: center;
         // border: 1px solid white; 
-        width: 64%;
+        width: 100%;
         font-weight: 500;
-        font-size: 33px;
+        font-size: 4vw;
         color: #ffffff;
     }
 }
@@ -44,13 +45,20 @@
         .heading{
             .title{
                 font-weight: bold;
-                font-size: 250px;
+                font-size: 13vw;
                 color: #e5e5e5;
             }
             .year{
                 font-weight: bold;
-                font-size: 300px;
+                font-size: 16vw;
+                // font-size: 300px;
             }
+        }
+        .tagline{
+            display: block;
+            // border: 1px solid white; 
+            width: 64%;
+            font-size: 1.6vw;
         }
     }
 }
