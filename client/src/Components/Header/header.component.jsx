@@ -2,6 +2,8 @@ import React from "react";
 
 import {motion} from 'framer-motion';
 
+import logo from './../../assets/LitFest_Logo.png'
+
 import "./header.style.scss";
 
 const Header = () => {
@@ -14,11 +16,7 @@ const Header = () => {
     return (
         <div className="header">
             <div className="logo-container">
-                <div className="logo">
-                    <span>
-                        LOGO
-                    </span>
-                </div>
+                <motion.img whileHover={{scale : 1.2}} src={logo} alt="logo" className="logo"/>
             </div>
             <div className="links-container">
                 <div className="link"><motion.span whileHover={{scale : 1.2}} className="link-text" onClick={handleClick}>ABOUT</motion.span></div>
