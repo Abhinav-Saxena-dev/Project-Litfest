@@ -99,7 +99,7 @@ const FormPage = (props) => {
         history.goBack()
       }
     }catch (e){ 
-      console.log(e);
+      console.log();
       alert('You have not been registered, an error has occured. Please check all fields, or you may have already registered or check your internet connection and try again. Contact us if problem persists.')
     }
   };
