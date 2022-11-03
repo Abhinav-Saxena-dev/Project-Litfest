@@ -9,15 +9,16 @@ $main-color: black;
 
 .group {
   position: relative;
-  margin: 45px 0;
+  margin-bottom: 70px;
 
   .form-input {
     background: none;
-    background-color: white;
+    background-color: #FAF9F6;
     color: $sub-color;
     font-size: 18px;
     padding: 10px 10px 10px 5px;
     display: block;
+    box-sizing: border-box;
     width: 100%;
     border: none;
     border-radius: 0;

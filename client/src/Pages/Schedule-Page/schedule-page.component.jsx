@@ -9,7 +9,7 @@ const SchedulePage = () => {
     return(
         <div className="schedule-page" id = {'schedule'}>
             <div className="schedule-page-heading">
-                <HeadingWithDash text = {`LITFEST SCHEDULE`}/>
+                <HeadingWithDash text = {`LITFEST SCHEDULE`} color = {'white'}/>
             </div>
             <div className="schedule-page-canvas">
                 <Schedule/>

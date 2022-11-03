@@ -6,10 +6,6 @@ import './dropdown.style.scss';
 
 const FormDrop = ({handleChange, list, name, title}) => {
 
-  const onChange = (item, name) => {
-
-  }
-
   return(
     <div className="form-dropdown">
         <Dropdown 
@@ -18,7 +14,8 @@ const FormDrop = ({handleChange, list, name, title}) => {
         list = {list}
         onChange = {handleChange}
         styles={{
-          wrapper: { width: '100%'},
+          wrapper: { width: '350px'},
+          
         }}
         />
     </div>

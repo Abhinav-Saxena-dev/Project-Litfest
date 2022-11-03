@@ -1,7 +1,8 @@
 .glimpses-past{
     height: 120vh;
     width: 100vw;
-    background-image: linear-gradient(#000000,#1c0025);
+    background: url('./../../assets//Background.png');
+    background-size: cover;
     position: relative;
     z-index: 0;
     display: flex;

@@ -16,7 +16,7 @@ const AboutUs = () => {
                 <InformationText/>
             </div>
             <div className="about-us-page-date">
-                <Date eventDate={`11th - 14th November`} regEndDate = {`10th November`}/>
+                <Date eventDate={`11th, 12th & 14th November`} regEndDate = {`10th November`}/>
             </div>
         </div>
     )

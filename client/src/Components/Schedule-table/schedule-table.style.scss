@@ -1,7 +1,7 @@
 .schedule-table{
     height: 90%;
     width: 90%;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #000000;
 
     .schedule-table-content{
         // border: 1px solid black;
@@ -11,19 +11,30 @@
         justify-content: space-around;
         align-items: center;
 
+        &:hover .schedule-date {
+            color : rgba(255, 81, 185, 0.875);
+        }
+        &:hover .schedule-event-name {
+            color : rgba(255, 81, 185, 0.875);
+        }
+        &:hover .schedule-event-time {
+            color : rgba(255, 81, 185, 0.875);
+        }
+
         .schedule-date{
             font-size: 1.3vw;
             width: 25%;
             display: flex;
             justify-content: center;
             position: relative;
+            color: white;
 
             &::before{
                 content: "";
                 position: absolute;
                 height: 6px;
                 width: 6px;
-                background-color: palevioletred;
+                background-color: rgba(255, 81, 185, 0.875);
                 border: none;
                 border-radius: 50%;
                 top: 40%;
@@ -35,12 +46,14 @@
             width: 25%;
             display: flex;
             justify-content: center;
+            color : white;
         }
         .schedule-event-name{
             font-size: 1.3vw;
             width: 50%;
             display: flex;
             justify-content: center;
+            color : white;
         }
     }
 }

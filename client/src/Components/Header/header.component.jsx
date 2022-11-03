@@ -8,7 +8,7 @@ const Header = () => {
 
     const handleClick = (e) => {
         const anchor = document.getElementById(e.target.innerHTML.toLowerCase())
-        anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        anchor.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
 
     return (

@@ -30,7 +30,7 @@ const schedule_data = [
         name : "BEGINNING OF INSTITUTIONAL ROUNDS",
     },
     {
-        date : '12TH NOVEMBER',
+        date : '14TH NOVEMBER',
         time : '04:00 PM',
         name : "FELICITAION CEREMONY",
     },

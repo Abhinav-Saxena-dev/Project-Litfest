@@ -9,7 +9,7 @@ const Glimpses = () => {
     return(
         <div className="glimpses-past" id = {'glimpses'}>
             <div className="glimpses-heading">
-                <HeadingWithDash text = {'GLIMPSES FROM THE PAST LITFEST EDITIONS'} color = {`white`}/>
+                <HeadingWithDash text = {'GLIMPSES FROM THE PAST LITFEST EDITIONS'} color = {`#FFF5EE`}/>
             </div>
             <div className="glimpses-imageswipe">
                 <ImageSwipe/>
