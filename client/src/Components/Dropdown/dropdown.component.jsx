@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 
 import {Dropdown} from 'reactjs-dropdown-component';
 
@@ -14,7 +15,7 @@ const FormDrop = ({handleChange, list, name, title}) => {
         list = {list}
         onChange = {handleChange}
         styles={{
-          wrapper: { width: '350px'},
+          wrapper: { width: '30vw'},
           
         }}
         />

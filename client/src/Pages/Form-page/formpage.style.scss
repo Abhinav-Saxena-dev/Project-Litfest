@@ -13,7 +13,7 @@
      }
 
      &.inc-len2{
-        height: 230vh;
+        height: 250vh;
      }
 
      .form-page-logo {
@@ -43,7 +43,7 @@
          background-color: #FAF9F6;
 
          .form-desc {
-             font-size: 1.5vw;
+             font-size: 1vw;
              font-weight: 400;
              line-height: 2.6rem;
              letter-spacing: 0.04em;
@@ -67,8 +67,9 @@
          &.inc-len1{
             height: 110vh;
          }
+
          &.inc-len2{
-            height: 250vh;
+            height: 110vh;
          }
 
          .form-heading {
@@ -158,7 +159,7 @@
              align-items: center;
     
              .form-debate-logo {
-                 scale: 0.5;
+                 scale: 0.8;
              }
          }
 
@@ -181,7 +182,7 @@
              }
         
              &.inc-len2{
-                height: 200vh;
+                height: 125vh;
              }
     
 
@@ -240,3 +241,105 @@
          }
      }
  }
+
+ @media only screen and (max-width : 400px) {
+    .form-page {
+
+       &.inc-len1{
+           height: 210vh;
+        }
+   
+        &.inc-len2{
+           height: 300vh;
+        }
+
+       .form-page-logo {
+           //  border: 1px solid black;
+            height: 20%;
+            width: 10%;
+            justify-content: center;
+            align-items: center;
+   
+            .form-debate-logo {
+                scale: 0.4;
+            }
+        }
+
+        .form-page-description {
+            width: 80%;
+
+            .form-desc {
+                font-size: 1rem;
+                font-weight: 350;
+                line-height: 2rem;
+                letter-spacing: 0.04em;
+            }
+        }
+
+        .form-page-form {
+           width: 100%;
+
+           &.inc-len1{
+               height: 130vh;
+            }
+       
+            &.inc-len2{
+               height: 200vh;
+            }
+   
+
+            .form {
+                width: 100%;
+                justify-content: flex-start;
+                flex-direction: column;
+                padding: 0 5%;
+
+                .form-page-inputs{
+                   height: 100%;
+                   width: 90%;
+                   // border: 1px solid black;
+                }
+                
+                .text-area-form {
+                width: 80vw;
+                height: 20%;
+                position: absolute;
+                top: 67%;
+
+                .answer-text {
+                    height: 100%;
+                    width: 100%;
+                    padding: 15px 0px 10px 15px;
+                    outline: 0px;
+                    border: 1px solid gray;
+                    border-radius: 8px;
+                    overflow-y: scroll;
+                    resize: none;
+                    font-family: 'Nanum Myeongjo', serif;
+                    letter-spacing: 1px;
+                    font-size: 15px;
+                    line-height: 30px;
+                    color: grey;
+                   }
+               }
+               
+               .submit-button {
+                   // border: 1px solid black;
+                   height: 13%;
+                   width: 70%;
+                   display: flex;
+                   justify-content: center;
+                   align-items: flex-start;
+                   position: absolute;
+                   top: 90%;
+                   left: 15%;
+               }
+                   
+                   &.down {
+                    height: 19%;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
