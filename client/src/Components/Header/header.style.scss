@@ -11,11 +11,13 @@
         height: 20vh;
         width: 35%;
         margin: 1vw 0 0 2vw;
+        // border: 1px solid white;
 
-        .logo{
-            display: flex;
+        .logo_lit{
             width: 20%;
             border-radius: 50%;
+            height: 70%;
+            background-color: white;
         }
     }
 

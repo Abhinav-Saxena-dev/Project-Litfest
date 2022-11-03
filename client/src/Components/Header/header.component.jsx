@@ -16,7 +16,7 @@ const Header = () => {
     return (
         <div className="header">
             <div className="logo-container">
-                <motion.img whileHover={{scale : 1.2}} src={logo} alt="logo" className="logo"/>
+                <motion.img whileHover={{scale : 1.2}} src={logo} alt="logo" className="logo_lit"/>
             </div>
             <div className="links-container">
                 <div className="link"><motion.span whileHover={{scale : 1.2}} className="link-text" onClick={handleClick}>ABOUT</motion.span></div>
