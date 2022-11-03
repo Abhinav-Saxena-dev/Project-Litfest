@@ -80,8 +80,7 @@ const FormPage = (props) => {
     if(!checkValues()){
       return false
     }
-    console.log(participant);
-    const url = `http://localhost:8000/${event}`;
+    const url = `https://litfest-server.herokuapp.com/${event}`;
     try{
       const response = await axios.post(url, participant);
       console.log(response);
