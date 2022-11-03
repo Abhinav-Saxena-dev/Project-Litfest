@@ -74,13 +74,33 @@
             .about-heading-text{
     
                 .text{
-                    font-size: 6vw;
+                    font-size: 22px;
     
                     &::before{
-                        height: 200%;
-                        width: 18%;
+                        height: 50px;
+                        width: 50px;
                         top : -50%;
                         left: -5%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 320px){
+    .headingwithdash{
+        .about-heading{    
+            .about-heading-text{
+    
+                .text{
+                    font-size: 18px;
+    
+                    &::before{
+                        height: 40px;
+                        width: 40px;
+                        top : -45%;
+                        left: -4%;
                     }
                 }
             }
