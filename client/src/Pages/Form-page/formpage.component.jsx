@@ -123,7 +123,7 @@ const FormPage = (props) => {
   };
 
   return (
-    <div className={`form-page ${event === 'debate' || event === 'creative-writing' ? 'inc-len' : ''}`}>
+    <div className={`form-page ${event === 'debate' ?'inc-len1' : ''} ${event === 'creative-writing' ?'inc-len2' : ''}`}>
       <div className="form-page-logo">
         <img src={logo} alt="LOGO" className="form-debate-logo" />
       </div>
@@ -137,7 +137,7 @@ const FormPage = (props) => {
       </div>
       :null
       }
-      <div className={`form-page-form ${event === 'debate' ? 'inc-len' : ''}`}>
+      <div className={`form-page-form ${event === 'debate' ?'inc-len1' : ''} ${event === 'creative-writing' ?'inc-len2' : ''}`}>
         <div className="form-heading">REGISTER</div>
         <form className="form" onSubmit={handleSubmit}>
           <div className="form-page-inputs">

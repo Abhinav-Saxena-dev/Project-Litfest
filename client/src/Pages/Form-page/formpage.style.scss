@@ -8,8 +8,12 @@
      flex-direction: column;
      background-color: #FCF2D1;
 
-     &.inc-len{
+     &.inc-len1{
         height: 210vh;
+     }
+
+     &.inc-len2{
+        height: 230vh;
      }
 
      .form-page-logo {
@@ -18,7 +22,7 @@
          width: 50%;
          display: flex;
          justify-content: center;
-         align-items: flex-end;
+         align-items: center;
 
          .form-debate-logo {
              scale: 1;
@@ -50,7 +54,7 @@
      .form-page-form {
          
          height: 90vh;
-         width: 83%;
+         width: 83vw;
          display: flex;
          box-sizing: border-box;
          flex-direction: column;
@@ -60,8 +64,11 @@
          box-shadow: 0 8px 30px rgba(69, 69, 69, 0.2);
          background-color: #FAF9F6;
 
-         &.inc-len{
+         &.inc-len1{
             height: 110vh;
+         }
+         &.inc-len2{
+            height: 250vh;
          }
 
          .form-heading {
@@ -84,6 +91,7 @@
              display: flex;
              justify-content: space-around;
              align-items: center;
+             position: relative;
 
              .form-page-inputs{
                 height: 100%;
@@ -134,7 +142,13 @@
  @media only screen and (max-width : 1000px) {
      .form-page {
 
-        height: 200vh;
+        &.inc-len1{
+            height: 210vh;
+         }
+    
+         &.inc-len2{
+            height: 250vh;
+         }
 
         .form-page-logo {
             //  border: 1px solid black;
@@ -162,6 +176,15 @@
          .form-page-form {
             width: 100%;
 
+            &.inc-len1{
+                height: 130vh;
+             }
+        
+             &.inc-len2{
+                height: 200vh;
+             }
+    
+
              .form {
                  width: 100%;
                  justify-content: flex-start;
@@ -173,11 +196,12 @@
                     width: 90%;
                     // border: 1px solid black;
                  }
-             }
-
-             .text-area-form {
-                 width: 100%;
-                 height: auto;
+                 
+                 .text-area-form {
+                 width: 80vw;
+                 height: 20%;
+                 position: absolute;
+                 top: 67%;
 
                  .answer-text {
                      height: 100%;
@@ -193,17 +217,22 @@
                      font-size: 15px;
                      line-height: 30px;
                      color: grey;
-                 }
-             }
-
-             .submit-button {
-                 // border: 1px solid black;
-                 height: 13%;
-                 width: 100%;
-                 display: flex;
-                 justify-content: center;
-
-                 &.down {
+                    }
+                }
+                
+                .submit-button {
+                    // border: 1px solid black;
+                    height: 13%;
+                    width: 70%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    position: absolute;
+                    top: 90%;
+                    left: 15%;
+                }
+                    
+                    &.down {
                      height: 19%;
                      align-items: center;
                  }
@@ -211,64 +240,3 @@
          }
      }
  }
-
- @media only screen and (max-height : 849px) {
-    .form-page {
-        height: 300vh;
-
-        .form-page-form {
-           width: 100%;
-            height: 190vh;
-            &.inc-len{
-                height: 190vh;
-             }
-
-            .form {
-                width: 100%;
-                justify-content: flex-start;
-                flex-direction: column;
-                padding: 0 5%;
-
-                .form-page-inputs{
-                   height: 100%;
-                   width: 90%;
-                   // border: 1px solid black;
-                }
-            }
-
-            .text-area-form {
-                width: 100%;
-                height: auto;
-
-                .answer-text {
-                    height: 100%;
-                    width: 100%;
-                    padding: 15px 0px 10px 15px;
-                    outline: 0px;
-                    border: 1px solid gray;
-                    border-radius: 8px;
-                    overflow-y: scroll;
-                    resize: none;
-                    font-family: 'Nanum Myeongjo', serif;
-                    letter-spacing: 1px;
-                    font-size: 15px;
-                    line-height: 30px;
-                    color: grey;
-                }
-            }
-
-            .submit-button {
-                // border: 1px solid black;
-                height: 13%;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-
-                &.down {
-                    height: 19%;
-                    align-items: center;
-                }
-            }
-        }
-    }
-}
