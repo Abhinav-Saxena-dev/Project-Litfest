@@ -14,9 +14,7 @@ const creative = require('./routes/creative_routes')
 
 dotenv.config({path : './config.env'})
 
-app.use(cors({
-    origin: '*'
-}));
+app.use(cors());
 
 app.use(express.json())
 
