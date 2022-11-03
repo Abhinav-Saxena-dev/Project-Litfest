@@ -38,8 +38,6 @@ const FormPage = (props) => {
     choice : "",
   });
 
-  const base = "http://localhost:8000/";
-
   if (event === "creative-writing") {
     flag += 1;
   }

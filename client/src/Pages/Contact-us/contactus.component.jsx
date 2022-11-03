@@ -1,7 +1,5 @@
 import React from "react";
 
-import HeadingWithDash from './../../Components/Headingwdash/headingwdash.component';
-
 import {motion} from 'framer-motion';
 
 import odyssey from './../../assets/Odyssey_logo.png';
@@ -12,9 +10,6 @@ import './contactus.style.scss';
 const ContactUs = () => {
     return(
         <div className="contact-us-page" id = {'contact'}>
-            {/* <div className="odyssey-page-heading">
-                <HeadingWithDash text = {`CONTACT US`} />
-            </div> */}
             <div className="contactus-page-logo">
                 <motion.img whileHover={{scale : 1.1}} src={odyssey} alt="" className="odyssey_logo"/>
             </div>

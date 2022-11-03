@@ -7,8 +7,7 @@ import FaqPage from "./Pages/FAQ-Page/faq.component";
 import ContactUs from "./Pages/Contact-us/contactus.component";
 import FormPage from "./Pages/Form-page/formpage.component";
 
-import {Route, useHistory} from 'react-router-dom';
-import { useEffect } from "react";
+import {Route} from 'react-router-dom';
 
 const App = () =>{
 
