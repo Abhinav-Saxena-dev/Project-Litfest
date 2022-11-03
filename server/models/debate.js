@@ -4,7 +4,6 @@ const DebateSchema = new mongoose.Schema({
   uname: {
     type : String,
     required : true,
-    index : true,
   },
   email: {
     type : String,
