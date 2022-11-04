@@ -16,19 +16,19 @@ const data = [
     },
     {
         id : 'debate',
-        content : `This is a debate. A debate is an organized arguement or contest of ideas in which the participants discuss a topic from two opposing sides. For the first round, the participants are required to choose one theme from the options in the form provided below. Participants will be merged into groups based on which theme they select. Their stand (For or against the motion) will be alloted to them before the commencement of Round 1.`,
+        content : [`This is a `,<b>debate competition</b>,`. A debate is an organized arguement or contest of ideas in which the participants discuss a topic from two opposing sides. For the first round, the participants are required to `, <b>choose one theme</b>, ` from the options in the form provided below. Participants will be merged into groups based on the theme they select. Their stand (For or Against the motion) will be alloted to them before the commencement of Round 1.`],
         logo : debate,
         title_event : "The Controversial Arc"
     },
     {
         id : 'just-a-minute',
-        content : `Just-A-Minute, or more commonly known as a JAM, as a competition where a participants creativity, presence of mind, and command over language is tested all within a span of one minute. Participants are invited to speak on a given topic without hesitation, repitition, or deviation. Points are awarded to the speakers who speak in adherence to the protocols at set time frames. But, beware the attentive ears that await your mistake to seize your glory with a mere tap on the table. `,
+        content : [<b>Just-A-Minute</b>, `, or more commonly known as a `,<b>JAM</b>,`, is a competition where a participant's creativity, presence of mind, and command over language is tested, all within a span of one minute. Participants are invited to speak on a given topic without hesitation, repitition, or deviation. Points are awarded to the speakers who speak in adherence to the protocols at set time frames during the speech. But, beware the attentive ears that await your mistake to seize your glory with a mere tap on the table.`],
         logo : jam,
         title_event : "JAM"
     },
     {
         id : 'hindi-jam',
-        content : [`Just-A-Minute, or more commonly known as a JAM, as a competition where a participants creativity, presence of mind, and command over language is tested all within a span of one minute. In this event, your command over our native tongue will be put to a test. So let your voice soar high, and echo through the hearts of those that wtiness your brilliant charm.`, <br></br>, <b>Note : Participants have to speak solely in Hindi and are not permitted to make use of english in the slightest.</b>],
+        content : [<b>Just-A-Minute</b>, `, or more commonly known as a `, <b>JAM</b>, ` as a competition where a participants creativity, presence of mind, and command over language is tested all within a span of one minute. In this event, your command over our native tongue will be put to a test. So let your voice soar high, and echo through the hearts of those that wtiness your brilliant charm.`, <br></br>, <b>Note : Participants have to speak solely in Hindi and are not permitted to make use of english in the slightest.</b>],
         logo : hind,
         title_event : "Abhivyakti"
     },

@@ -5,7 +5,7 @@ const accordionData = [
   },
   {
     title: 'Can I register for multiple events?',
-    content: `No, you cannot register for multiple events because all of them will run parallely.`
+    content: `No, you cannot register for multiple events because all of them will run simultaneously.`
   },
   {
     title: 'Can a non-contestant take part in the fun-stalls?',

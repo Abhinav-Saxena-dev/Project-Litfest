@@ -7,7 +7,6 @@
      justify-content: space-around;
      flex-direction: column;
      background-color: hsl(46, 88%, 90%);
-     min-height: 2300px;
 
      &.inc-len1{
         height: 210vh;
@@ -64,17 +63,14 @@
          border-radius: 30px;
          box-shadow: 0 8px 30px rgba(69, 69, 69, 0.2);
          background-color: #FAF9F6;
-         min-height: 1000px;
 
          &.inc-len1{
             height: 110vh;
-            min-height: 1000px;
 
          }
 
          &.inc-len2{
             height: 110vh;
-            min-height: 1000px;
          }
 
          .form-heading {
@@ -98,7 +94,6 @@
              justify-content: space-around;
              align-items: center;
              position: relative;
-             min-height: 1000px;
 
 
              .form-page-inputs{
@@ -149,6 +144,8 @@
 
  @media only screen and (max-width : 1000px) {
      .form-page {
+     min-height: 2300px;
+
 
         &.inc-len1{
             height: 210vh;
@@ -183,13 +180,17 @@
 
          .form-page-form {
             width: 100%;
+            min-height: 1000px;
+
 
             &.inc-len1{
                 height: 130vh;
+                min-height: 1000px;
              }
         
              &.inc-len2{
                 height: 125vh;
+                min-height: 1000px;
              }
     
 
@@ -198,6 +199,7 @@
                  justify-content: flex-start;
                  flex-direction: column;
                  padding: 0 5%;
+                min-height: 1000px;
 
                  .form-page-inputs{
                     height: 100%;
