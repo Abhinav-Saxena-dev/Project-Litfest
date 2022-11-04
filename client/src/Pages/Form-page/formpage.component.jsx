@@ -108,8 +108,21 @@ const FormPage = (props) => {
     }
   };
 
-  const handleChange = (event) => {
-    const { value, name } = event.target;
+  const handleChange = (e) => {
+    console.log(e.target.value);
+    const { value, name } = e.target;
+    if(name === 'uname'){
+      const lastChar = value.charAt(value.length - 1);
+      const specialChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/; 
+      if(!isNaN(lastChar) && lastChar !== ' ' && lastChar !== ''){
+        alert('Name cannot have a number')
+        return false
+      }
+      else if(specialChars.test(value) && lastChar !== ' ' && lastChar !== ''){
+        alert('Name cannot have a special character')
+        return false
+      }
+    }
     setParticipant((prev) => {
       return { ...prev, [name]: value };
     });
@@ -146,7 +159,7 @@ const FormPage = (props) => {
               type="text"
               value={participant.uname}
               handleChange={handleChange}
-              label="Name"
+              label="Full Name"
               required
             />
             <FormInput
@@ -154,7 +167,7 @@ const FormPage = (props) => {
               type="email"
               value={participant.email}
               handleChange={handleChange}
-              label="Email"
+              label="Email ID"
               required
             />
             <FormInput
