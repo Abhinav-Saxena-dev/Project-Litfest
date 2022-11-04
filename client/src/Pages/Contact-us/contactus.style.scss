@@ -205,7 +205,7 @@
                     // border: 1px solid white;
     
     
-                    .member-number{
+                    .memberwidth-number{
                         // border: 1px solid white;
                         height: 33.3%;
                         width: 100%;
@@ -257,4 +257,17 @@
     .contact-us-page{
         height: 200vh;    
 }
+}
+
+@media only screen and (max-width : 500px) {
+    .contact-us-page{
+        flex-direction: column;
+        .contactus-page-logo{
+            width: 80%;
+            .odyssey_logo{
+                height: 60%;
+                width: 100%;
+            }
+        }
+    } 
 }
