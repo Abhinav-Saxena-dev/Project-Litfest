@@ -1,11 +1,15 @@
 const accordionData = [
   {
+    title: 'Who can participate?',
+    content: `Anyone studying in the Institution can attend the events as a spectator.`
+  },
+  {
     title: 'Who can attend?',
-    content: `Anyone studying in the Institution except the 1st years can participate. However, it should be noted that a minimum of 75% attendance is required to register.`
+    content: `Everyone studying in the institution except the 1st year students are eligible to participate in the event.`
   },
   {
     title: 'Can I register for multiple events?',
-    content: `No, you cannot register for multiple events because all of them will run simultaneously.`
+    content: `No, you cannot register for multiple events because all of them will take place simultaneously.`
   },
   {
     title: 'Can a non-contestant take part in the fun-stalls?',
