@@ -1,7 +1,7 @@
 const accordionData = [
   {
     title: 'Who can attend?',
-    content: `Anyone studying in the Institution can participate. However, it should be noted that a minimum of 75% attendance is required to register.`
+    content: `Anyone studying in the Institution except the 1st years can participate. However, it should be noted that a minimum of 75% attendance is required to register.`
   },
   {
     title: 'Can I register for multiple events?',
@@ -24,8 +24,8 @@ const accordionData = [
     content: `You are required to wear your id card to the event.`
   },
   {
-    title: 'Do we have to take permission from respective departments before participation?',
-    content: `No, as academic activities won't be effected, there is no need of permission.`
+    title: 'Will I have fun in LitFest if I am a beginner?',
+    content: `Without a doubt, LitFest is a beginner friendly event where participants are meant to cultivate their skills!`
   }
 ];
 
