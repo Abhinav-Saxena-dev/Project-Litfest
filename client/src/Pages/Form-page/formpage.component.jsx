@@ -9,6 +9,8 @@ import branch from "./../../assets/branch";
 import year from "./../../assets/year";
 import choice from "../../assets/debate_choice";
 
+import Swal from 'sweetalert2'
+
 import { useHistory } from "react-router-dom";
 
 import axios from "axios";
@@ -53,23 +55,49 @@ const FormPage = (props) => {
 
   const checkValues = () => {
     if(participant.number < 1000000000 || participant.number > 9999999999){
-      alert('Phone number has to be 10 digits in length. Please Correct and Retry.')
+      Swal.fire({
+        title : 'Alert!',
+        text : 'Phone number has to be 10 digits in length. Please Correct and Retry.',
+        icon : 'warning',
+        confirmButtonText : 'Ok'
+      })
       return false;
     }
     if(participant.uid < 1000000000000 || participant.uid > 9999999999999){
-      alert('University roll number has to be 13 digits in length. Please Correct and Retry.')
+      Swal.fire({
+        title : 'Alert!',
+        text : 'University roll number has to be 13 digits in length. Please Correct and Retry.',
+        icon : 'warning',
+        confirmButtonText : 'Ok'
+      })
       return false;
     }
     if(!participant.dept){
-      alert('Please select your department and try again.')
+      Swal.fire({
+        title : 'Alert!',
+        text : 'Please select your department and try again.',
+        icon : 'warning',
+        confirmButtonText : 'Ok'
+      })
       return false;
     }
     if(!participant.year){
-      alert('Please select your year and try again.')
+      Swal.fire({
+        title : 'Alert!',
+        text : 'Please select your year and try again.',
+        icon : 'warning',
+        confirmButtonText : 'Ok'
+      })
       return false;
     }
     if(event === 'debate' && !participant.choice){
-      alert('Please select the theme of debate and try again.')
+      alert('')
+      Swal.fire({
+        title : 'Alert!',
+        text : 'Please select the theme of debate and try again.',
+        icon : 'warning',
+        confirmButtonText : 'Ok'
+      })
     }
     return true;
   }
@@ -99,12 +127,24 @@ const FormPage = (props) => {
         choice : "",
       });
       if(response){
-        alert(`You have been successfully registered for ${title_event}. Press okay to go back`)
+        alert()
+        Swal.fire({
+          title : 'Yay!',
+          text : `You have been successfully registered for ${title_event}. Remember, you can take part in a single event only! Press okay to go back.`,
+          icon : 'success',
+          confirmButtonText : 'Ok'
+        })
         history.goBack()
       }
     }catch (e){ 
       console.log();
-      alert('You have not been registered, an error has occured. Please check all fields, or you may have already registered or check your internet connection and try again. Contact us if problem persists.')
+      alert()
+      Swal.fire({
+        title : 'Error',
+        text : 'You have not been registered, an error has occured. Please check all fields, or you may have already registered or check your internet connection and try again. Contact us if problem persists.',
+        icon : 'error',
+        confirmButtonText : 'Ok'
+      })
     }
   };
 
@@ -115,11 +155,21 @@ const FormPage = (props) => {
       const lastChar = value.charAt(value.length - 1);
       const specialChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/; 
       if(!isNaN(lastChar) && lastChar !== ' ' && lastChar !== ''){
-        alert('Name cannot have a number')
+        Swal.fire({
+          title : 'Alert!',
+          text : 'Name cannot have a number.',
+          icon : 'warning',
+          confirmButtonText : 'Ok'
+        })
         return false
       }
       else if(specialChars.test(value) && lastChar !== ' ' && lastChar !== ''){
-        alert('Name cannot have a special character')
+        Swal.fire({
+          title : 'Alert!',
+          text : 'Name cannot have a special character.',
+          icon : 'warning',
+          confirmButtonText : 'Ok'
+        })
         return false
       }
     }
