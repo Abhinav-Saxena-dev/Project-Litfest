@@ -136,11 +136,9 @@ const FormPage = (props) => {
         history.goBack()
       }
     }catch (e){ 
-      console.log();
-      alert()
       Swal.fire({
         title : 'Error',
-        text : 'You have not been registered because an error has occured. Please check all fields and our internet connection before trying again. You may have already registered as well. Contact us if problem persists.',
+        text : 'You have not been registered because an error has occured. Please check all fields and your internet connection before trying again. Or you may have already registered. Contact us if problem persists.',
         icon : 'error',
         confirmButtonText : 'Ok'
       })
