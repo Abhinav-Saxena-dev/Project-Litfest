@@ -87,7 +87,7 @@ const FormPage = (props) => {
           'Content-Type': 'application/json'
         }
       });
-      console.log(response);
+      // console.log(response);
       setParticipant({
         uname: "",
         email: "",
@@ -109,7 +109,7 @@ const FormPage = (props) => {
   };
 
   const handleChange = (e) => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     const { value, name } = e.target;
     if(name === 'uname'){
       const lastChar = value.charAt(value.length - 1);
