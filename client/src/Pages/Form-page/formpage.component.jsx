@@ -129,7 +129,7 @@ const FormPage = (props) => {
       if(response){
         Swal.fire({
           title : 'Yay!',
-          text : `You have been successfully registered for ${title_event}. Remember : You can take part in a single event only! Press okay to go back.`,
+          text : `You have been successfully registered for ${title_event}. Remember : You can take part in a single event only! Press okay to continue exploring.`,
           icon : 'success',
           confirmButtonText : 'Ok'
         })
@@ -138,7 +138,7 @@ const FormPage = (props) => {
     }catch (e){ 
       Swal.fire({
         title : 'Error',
-        text : 'You have not been registered because an error has occured. Please check all fields and your internet connection before trying again. Or you may have already registered. Contact us if problem persists.',
+        text : 'Please check your internet connection. If still getting this error, please check if you had registered already. Contact us if problem persists.',
         icon : 'error',
         confirmButtonText : 'Ok'
       })
