@@ -54,3 +54,13 @@
     cursor: pointer;
   }
   
+
+  @media only screen and (min-width : 1000px) {
+    
+      .imageswipe-container{
+        .image-swipe {
+          height: 85vh;
+        }
+      }
+    
+  }
