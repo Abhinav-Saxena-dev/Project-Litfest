@@ -138,7 +138,7 @@
             width: 80%;
             .odyssey_logo{
                 height: 60%;
-                width: 80%;
+                width: 50%;
             }
         }
     
@@ -160,7 +160,7 @@
                 &::before{
                     content: "Have a query? Reach us out on :";
                     position: absolute;
-                    font-size: 5vw;
+                    font-size: 3vw;
                     top: -30%;
                     left: 10%;
                     color: rgba(194, 194, 194, 0.708);
@@ -169,7 +169,7 @@
                 &::after{
                     content: "Follow us for latest updates :";
                     position: absolute;
-                    font-size: 5vw;
+                    font-size: 3vw;
                     top: 70%;
                     left: 10%;
                     color: rgba(194, 194, 194, 0.708);
@@ -212,7 +212,7 @@
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
-                        font-size: 3.4vw;
+                        font-size: 3vw;
                         color: rgb(255, 0, 255);
     
                     }
@@ -229,7 +229,7 @@
     
                 & a{
                     text-decoration: none;
-                    font-size: 8vw;
+                    font-size: 6vw;
     
                     &:hover{
                         scale: 1.18;
@@ -239,4 +239,22 @@
             }
         }
     }    
+}
+
+@media only screen and (max-height : 849px) {
+    .contact-us-page{
+        height: 90vh;    
+}
+}
+
+@media only screen and (max-height : 500px) {
+    .contact-us-page{
+        height: 120vh;    
+}
+}
+
+@media only screen and (max-height : 300px) {
+    .contact-us-page{
+        height: 200vh;    
+}
 }
