@@ -23,6 +23,7 @@ const HindiJamSchema = new mongoose.Schema({
   uid: {
     type : Number,
     required : true,
+    unique,
   },
   year: {
     type : Number,
