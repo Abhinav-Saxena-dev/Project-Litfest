@@ -1,11 +1,11 @@
 const accordionData = [
   {
     title: 'Who can participate?',
-    content: `Anyone studying in the Institution can attend the events as a spectator.`
+    content: `Everyone studying in the institution except the 1st year students are eligible to participate in the event.`
   },
   {
     title: 'Who can attend?',
-    content: `Everyone studying in the institution except the 1st year students are eligible to participate in the event.`
+    content: `Anyone studying in the Institution can attend the events as a spectator.`
   },
   {
     title: 'Can I register for multiple events?',
