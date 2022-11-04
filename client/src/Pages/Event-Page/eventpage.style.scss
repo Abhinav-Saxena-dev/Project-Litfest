@@ -4,15 +4,18 @@
     background-color: #f1f3f7;
     position: relative;
     z-index: 0;
+    min-height: 2100px;
 
     .event-page-heading{
         height: 5%;
         width: 90%;
+        min-height: 100px
     }
 
     .event-page-events{
         // border : 1px solid black;
         height:60%;
         width: 100%;
+        min-height: 500px;
     }
 }
