@@ -6,15 +6,18 @@
      align-items: center;
      justify-content: space-around;
      flex-direction: column;
-     background-color: #FCF2D1;
-     min-height: 2300px;
+     background-color: hsl(46, 88%, 90%);
+     min-height: 2000px;
 
      &.inc-len1{
         height: 210vh;
+        min-height: 2100px;
+
      }
 
      &.inc-len2{
         height: 250vh;
+        min-height: 2300px;
      }
 
      .form-page-logo {
@@ -64,7 +67,7 @@
          border-radius: 30px;
          box-shadow: 0 8px 30px rgba(69, 69, 69, 0.2);
          background-color: #FAF9F6;
-         min-height: 1000px;
+         min-height: 800px;
 
          &.inc-len1{
             height: 110vh;
