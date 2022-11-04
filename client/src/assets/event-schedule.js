@@ -32,7 +32,7 @@ const schedule_data = [
     {
         date : '14TH NOVEMBER',
         time : '04:00 PM',
-        name : "FELICITAION CEREMONY",
+        name : "FELICITATION CEREMONY",
     },
 ]
 
