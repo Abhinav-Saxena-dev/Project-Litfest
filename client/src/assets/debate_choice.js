@@ -1,19 +1,19 @@
 const choice = [
     {
-      label: 'Koi mil gaya',
-      value: 'koi mil gaya',
+      label: 'Lion King',
+      value: 'lion king',
     },
     {
-      label: 'Jaadu',
-      value: 'jaadu',
+      label: 'Titanic',
+      value: 'titanic',
     },
     {
-      label: 'Matrix',
-      value: 'matrix',
+      label: 'Kuch kuch hota hai',
+      value: 'kuch kuch hota hai',
     },
     {
-        label: 'Pokemon',
-        value: 'pokemon',
+        label: '3 Idiots',
+        value: '3 Idiots',
       },
   ];
 
