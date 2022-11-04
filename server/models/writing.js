@@ -4,7 +4,6 @@ const CreativeSchema = new mongoose.Schema({
   uname: {
     type : String,
     required : true,
-    index : true,
   },
   email: {
     type : String,
@@ -23,6 +22,7 @@ const CreativeSchema = new mongoose.Schema({
   uid: {
     type : Number,
     required : true,
+    unique : true,
   },
   year: {
     type : Number,

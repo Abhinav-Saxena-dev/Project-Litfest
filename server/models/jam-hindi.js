@@ -4,7 +4,6 @@ const HindiJamSchema = new mongoose.Schema({
   uname: {
     type : String,
     required : true,
-    index : true,
   },
   email: {
     type : String,
@@ -23,7 +22,7 @@ const HindiJamSchema = new mongoose.Schema({
   uid: {
     type : Number,
     required : true,
-    unique,
+    unique : true,
   },
   year: {
     type : Number,

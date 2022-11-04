@@ -22,6 +22,7 @@ const DebateSchema = new mongoose.Schema({
   uid: {
     type : Number,
     required : true,
+    unqiue : true
   },
   year: {
     type : Number,
