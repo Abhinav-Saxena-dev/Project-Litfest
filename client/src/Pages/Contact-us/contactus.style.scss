@@ -103,6 +103,11 @@
                     align-items: center;
                     font-size: 1.7vw;
                     color: rgb(255, 0, 255);
+                    user-select: all; 
+                    -webkit-user-select: all;
+                    -khtml-user-select: all;
+                    -moz-user-select: all; 
+                    -ms-user-select: all;
 
                 }
             }
