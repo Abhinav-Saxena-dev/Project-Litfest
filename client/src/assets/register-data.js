@@ -16,7 +16,7 @@ const data = [
     },
     {
         id : 'debate',
-        content : [`This is a `,<b>debate competition</b>,`. A debate is an organized arguement or contest of ideas in which the participants discuss a topic from two opposing sides. For the first round, the participants are required to `, <b>choose one theme</b>, ` from the options in the form provided below. Participants will be merged into groups based on the theme they select. Their stand (For or Against the motion) will be alloted to them before the commencement of Round 1.`, <br></br>, <b>OPTIONAL : Participants can dress up as any character from the series the have chosen for brownie points!</b>],
+        content : [`This is a `,<b>debate competition</b>,`. A debate is an organized arguement or contest of ideas in which the participants discuss a topic from two opposing sides. For the first round, the participants are required to `, <b>choose one theme</b>, ` from the options in the form provided below. Participants will be merged into groups based on the theme they select. Their stand (For or Against the motion) will be alloted to them before the commencement of Round 1.`, <br></br>, <b>OPTIONAL : Participants can dress up as any character from the series they have chosen for brownie points!</b>],
         logo : debate,
         title_event : "The Controversial Arc"
     },
