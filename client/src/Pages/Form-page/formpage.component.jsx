@@ -24,6 +24,8 @@ const FormPage = (props) => {
 
   const history = useHistory();
 
+  const [isClicked, setClicked] = useState(false)
+
   const event = props.match.params.event;
   let flag = 0;
 
@@ -108,6 +110,7 @@ const FormPage = (props) => {
     if(!checkValues()){
       return false
     }
+    setClicked(true)
     const url = `https://litfest-server.herokuapp.com/${event}`;
     try{
       const response = await axios.post(url, participant,{
@@ -131,16 +134,19 @@ const FormPage = (props) => {
           title : 'Yay!',
           text : `You have been successfully registered for ${title_event}. Remember : You can take part in a single event only! Press okay to continue exploring.`,
           icon : 'success',
-          confirmButtonText : 'Ok'
+          confirmButtonText : 'Ok',
+          allowOutsideClick : false,
         })
         history.goBack()
       }
     }catch (e){ 
+      setClicked(false)
       Swal.fire({
         title : 'Error',
         text : 'Please check your internet connection. If still getting this error, please check if you had registered already. Contact us if problem persists.',
         icon : 'error',
-        confirmButtonText : 'Ok'
+        confirmButtonText : 'Ok',
+        allowOutsideClick : false,
       })
     }
   };
@@ -258,7 +264,7 @@ const FormPage = (props) => {
             : null
             }
             <div className={`submit-button ${flag ? "down" : ""}`}>
-              <EventButton text={"Submit"} type="submit" />
+              <EventButton text={isClicked ? 'Please Wait' : 'Submit'} disabled = {isClicked ? true : false} type="submit" />
             </div>
           </div>
           {
