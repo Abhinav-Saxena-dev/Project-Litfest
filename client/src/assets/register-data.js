@@ -76,10 +76,10 @@ const data = [
       </b>,
       ,
       <br></br>,
-      <b>Tutorial will be released soon! </b>,
-      // <a href="https://www.instagram.com/p/CklU6_WsCMz/" className="insta_link" target = "_blank">
-      //   Check out this tutorial!
-      // </a>,
+      <b>Wanna Learn more about the event? </b>,
+      <a href="https://www.instagram.com/p/CknqKduuagD/" className="insta_link" target = "_blank">
+        Check out this tutorial!
+      </a>,
     ],
     logo: hind,
     title_event: "Abhivyakti",
