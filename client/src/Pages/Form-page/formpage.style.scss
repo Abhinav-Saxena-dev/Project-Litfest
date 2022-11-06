@@ -48,6 +48,15 @@
              line-height: 2.6rem;
              letter-spacing: 0.04em;
              color: rgb(0, 0, 0);
+
+             .insta_link{
+                text-decoration: none;
+                color: #9421ff;
+
+                &:hover{
+                    color: rgb(178, 0, 178);
+                }
+             }
          }
      }
 
