@@ -20,6 +20,12 @@ import "./formpage.style.scss";
 const FormPage = (props) => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    Swal.fire({
+      title : 'Alert!',
+      text : 'REGISTRATIONS HAVE ENDED!',
+      icon : 'error',
+      confirmButtonText : 'Ok'
+    })
   }, []);
 
   const history = useHistory();
@@ -93,7 +99,6 @@ const FormPage = (props) => {
       return false;
     }
     if(event === 'debate' && !participant.choice){
-      alert('')
       Swal.fire({
         title : 'Alert!',
         text : 'Please select the theme of debate and try again.',
@@ -106,49 +111,55 @@ const FormPage = (props) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    Swal.fire({
+      title : 'Alert!',
+      text : 'REGISTRATIONS HAVE ENDED!',
+      icon : 'error',
+      confirmButtonText : 'Ok'
+    })
     checkEvent(flag);
     if(!checkValues()){
       return false
     }
     setClicked(true)
-    const url = `https://litfest-server.herokuapp.com/${event}`;
-    try{
-      const response = await axios.post(url, participant,{
-        headers : {
-          'Content-Type': 'application/json'
-        }
-      });
-      // console.log(response);
-      setParticipant({
-        uname: "",
-        email: "",
-        number: "",
-        dept: "",
-        uid: "",
-        year: "",
-        answer: "",
-        choice : "",
-      });
-      if(response){
-        Swal.fire({
-          title : 'Yay!',
-          text : `You have been successfully registered for ${title_event}. Remember : You can take part in a single event only! Press okay to continue exploring.`,
-          icon : 'success',
-          confirmButtonText : 'Ok',
-          allowOutsideClick : false,
-        })
-        history.goBack()
-      }
-    }catch (e){ 
-      setClicked(false)
-      Swal.fire({
-        title : 'Error',
-        text : 'Please check your internet connection. If still getting this error, please check if you had registered already. Contact us if problem persists.',
-        icon : 'error',
-        confirmButtonText : 'Ok',
-        allowOutsideClick : false,
-      })
-    }
+    // const url = `https://litfest-server.herokuapp.com/${event}`;
+    // try{
+    //   const response = await axios.post(url, participant,{
+    //     headers : {
+    //       'Content-Type': 'application/json'
+    //     }
+    //   });
+    //   // console.log(response);
+    //   setParticipant({
+    //     uname: "",
+    //     email: "",
+    //     number: "",
+    //     dept: "",
+    //     uid: "",
+    //     year: "",
+    //     answer: "",
+    //     choice : "",
+    //   });
+    //   if(response){
+    //     Swal.fire({
+    //       title : 'Yay!',
+    //       text : `You have been successfully registered for ${title_event}. Remember : You can take part in a single event only! Press okay to continue exploring.`,
+    //       icon : 'success',
+    //       confirmButtonText : 'Ok',
+    //       allowOutsideClick : false,
+    //     })
+    //     history.goBack()
+    //   }
+    // }catch (e){ 
+    //   setClicked(false)
+    //   Swal.fire({
+    //     title : 'Error',
+    //     text : 'Please check your internet connection. If still getting this error, please check if you had registered already. Contact us if problem persists.',
+    //     icon : 'error',
+    //     confirmButtonText : 'Ok',
+    //     allowOutsideClick : false,
+    //   })
+    // }
   };
 
   const handleChange = (e) => {
@@ -213,6 +224,7 @@ const FormPage = (props) => {
               value={participant.uname}
               handleChange={handleChange}
               label="Full Name"
+              disabled
               required
             />
             <FormInput
@@ -221,6 +233,7 @@ const FormPage = (props) => {
               value={participant.email}
               handleChange={handleChange}
               label="Email ID"
+              disabled
               required
             />
             <FormInput
@@ -229,6 +242,7 @@ const FormPage = (props) => {
               value={participant.number}
               handleChange={handleChange}
               label="Phone Number"
+              disabled
               required
             />
             <FormInput
@@ -237,12 +251,14 @@ const FormPage = (props) => {
               value={participant.uid}
               handleChange={handleChange}
               label="University Roll Number"
+              disabled
               required
             />
             <FormDrop
               handleChange={handleChangeSelect}
               name="dept"
               list={branch}
+              disabled
               title="Select Department"
             />
             <FormDrop
@@ -250,6 +266,7 @@ const FormPage = (props) => {
               name="year"
               list={year}
               title="Select Year"
+              disabled
               required
             />
             {
@@ -259,12 +276,13 @@ const FormPage = (props) => {
               name="choice"
               list={choice}
               title="Select Theme"
+              disabled
               required
             />
             : null
             }
             <div className={`submit-button ${flag ? "down" : ""}`}>
-              <EventButton text={isClicked ? 'Please Wait' : 'Submit'} disabled = {isClicked ? true : false} type="submit" />
+              <EventButton text={'DISABLED'} disabled type="submit" />
             </div>
           </div>
           {

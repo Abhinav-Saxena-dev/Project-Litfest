@@ -14,10 +14,10 @@ const RegisterButton = () => {
   return (
     <div className="container">
     <div className="button-container">
-      <span className="mask">Register</span>
+      <span className="mask">Explore</span>
       <motion.button onClick={handleClick}
       whileTap= {{scale : 0.9}}
-      type="button" name="Hover">Realise!</motion.button>
+      type="button" name="Hover">Explore</motion.button>
     </div>
   </div>
   );

@@ -71,7 +71,7 @@ const Event = ({event_no, event_desc, event_name, Logo}) => {
             transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1)"
           }}
           className="event-register-btn">
-            <EventButton text = {`Register / Explore`} onClick = {handleClick}/>
+            <EventButton text = {`Explore`} onClick = {handleClick}/>
           </motion.div>
         </div>
         <div className="event-image-container">
