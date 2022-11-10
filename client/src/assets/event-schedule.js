@@ -6,7 +6,7 @@ const schedule_data = [
     },
     {
         date : '10TH NOVEMBER',
-        time : '11:59 PM',
+        time : '08:00 PM',
         name : "REGISTRATION CLOSES FOR ALL EVENTS",
     },
     {
