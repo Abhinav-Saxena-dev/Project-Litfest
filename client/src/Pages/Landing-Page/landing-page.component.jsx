@@ -18,7 +18,7 @@ const LandingPage = () => {
                 <LitFestTitle />
             </div>
             <div className="page-countdown">
-                <CountDown targetDate = {{year : 2022, month : 10, date : 10}}/>
+                <CountDown targetDate = {{year : 2022, month : 10, date : 11}}/>
             </div>
             <div className="register-btn">
                 <RegisterButton/>
